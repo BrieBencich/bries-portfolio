@@ -44,30 +44,18 @@ body {
     color:rgb(119, 175, 175);
   }
 
-  .steps div {
-    margin-bottom: 80px;
-  }
-  
   .steps img {
-    width: 15%;
+    width: 100%;
     margin: auto;
   } 
-  
+
   .steps h3 {
-    color: #024e76;
+    color: white;
     font-size: 46px;
     margin-top: 10px;
+    background-color: black;
+    float: right;
   }
-  
-  .steps p {
-    color: #39a6b2;
-    font-size: 23px;
-  }
-  
-  .steps span {
-    font-size: 38px;
-  }
-  
 
  /* Hero Style Start */
   
