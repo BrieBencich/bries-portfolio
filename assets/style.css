@@ -114,10 +114,11 @@ body {
     color: black;
   }
    
-  iframe:hover:: {
+  link:hover:: {
 
     color: purple;
-    
+    align-items: left;
+
     
     
   }
