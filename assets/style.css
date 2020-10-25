@@ -1,177 +1,178 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-body {
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+  margin: 0;
+  text-decoration: none;
+}
 
 
-  /* Navigation */
+/* header settings */
+header {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+a h1 {
+  color: white;
+  display: inline-block;
+  margin-left: 15px;
+}
+h1 span {
+  font-weight: lighter;
+  padding-left: 5px;
+}
+h1::after {
+  content: " ";
+  display: block;
+  background-color: grey;
+  width: 187px;
+  height: 10px;
+  margin-top: -10px;
+}
+nav ul {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  list-style: none;
+}
+nav ul li a {
+  padding: 3px 10px;
+  margin: 0 25px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-align: center;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  border: 2px solid white;
+}
 
-  header {
-    padding: 20px 35px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: white;
-    background-color: rgb(119, 175, 175);
-    margin: 0;
-  
-  } 
-
-  header nav {
-    margin: 7px 0;
-  }
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-
-
-  header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-  }
-  header a {
-    text-decoration: none;
-    color:rgb(119, 175, 175);
+/* hero settings */
+.hero {
+  background-color: lightsalmon;
+  width: 100%;
+  height: 225px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  background: (
     
-  }
-
-  .division img {
-    width: 100%;
-    margin: auto;
-  } 
-
-  .division h3 {
-    color: white;
-    font-size: 46px;
-    margin-top: 10px;
-    background-color: black;
-    float: right;
-  }
- /*Navigation Ends*/
-
- 
- /* About Me Section Starts */
-  
-  .hero-cta {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: black;
-    font-size: 18px;
-    line-height: 1.3;
-    ;
-  }
-  .hero-cta h2 {
-    font-style: bold;
-    font-size: 55px;
-    color: black;
-  }
-
-  .brie-img img {
-    width: 40%;
-    margin-left: 20px;
-    float: center;
-   }
-
-  .about-me-text p { 
-  font-size: 22 px;
+    lightsalmon,
+    white
+  );
+}
+.welcome-bar {
+  padding: 10px 20px;
+  margin: 35px;
+  background-color: black;
+  width: fit-content;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.welcome-bar h2 {
+  font-weight: lighter;
+}
+/* portfolio contents */
+.portfolio-background {
+  box-sizing: border-box;
+  width: 100%;
+}
+.portfolio-grid-container {
+  margin: 40px 30px 40px 0;
+  display: grid;
+  grid-template-columns: 0.7fr repeat(3, 1fr);
+  grid-template-rows: 1fr 4fr 2fr 0.6fr;
+  grid-gap: 20px;
+}
+.small-titles {
+  font-size: 1.7rem;
   color: black;
-  margin-bottom: 35px;
-  padding: 0 15px 20px 15px;
-  border-right: 3px solid;
-  border-color: black;
-  display: inline-flex; 
-  float: right;
-  text-align: right;
-  
-  }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-right: 5px solid ;
+}
+.about-me-content {
+  grid-column: 2 / span 3;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+}
+.about-me-content p {
+  padding-top: 10px;
+}
+.portfolio-title {
+  grid-row: 2 / span 2;
+}
+.portfolio-large {
+  background-image: ;
+  background-size: cover;
+  background-position: center;
+  grid-column: span 3;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+}
+.portfolio-large h3 a,
+.portfolio-med h3 {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  padding: 0.4em 1em;
+}
+.portfolio-large:hover,
+.portfolio-med:hover {
+  opacity: 0.5;
+}
 
-   /* About me Section Ends */
+.brand-design {
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+.brand-design h3 {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  background-color: black;
+  font-size: 0.8rem;
+  padding: 0.4em 1em;
+}
+.brand-design:hover {
+  opacity: 0.5;
+}
 
-  
-  
-   /* Work Section Starts*/
-
-   .work {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: black;
-    font-size: 18px;
-    line-height: 1.3;
-  }
-
-   .work h2 {
-    font-style: bold;
-    font-size: 55px;
-    color: black;
-  }
-   
-  link:hover:: {
-
-    color: purple;
-    
-  }
-
-
-
-   /* Contact Me Section Starts */
-    .contact-me {
-      width: 35%;
-      text-align: right;
-      margin: 3.5%;
-      color: black;
-      font-size: 18px;
-      line-height: 1.3;
-    }
-
-   .contact-me h2 {
-    font-style: bold;
-    font-size: 55px;
-    color: black;
-  }
-
-  .contact-me nav {
-    margin: 7px 0;
-  }
-  .contact-me nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  .contact-me nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-  }
-   .contact-me a {
-    text-decoration: none;
-    color: black;
-    
-  }
-
-  /* Contact me Section Ends */
-
-
-
-
-  
-  
+.contact-me-title {
+  grid-column: 1 / 2;
+  grid-row: -2 / -1;
+}
+.contact-info {
+  grid-row: -2 / -1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+.small-titles,
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone::before {
+  margin-right: 5px;
+}
+.email::before {
+  margin-right: 5px;
+}
+.github a {
+  color: black;
+}
+.github::before {
+  margin-right: 5px;
+}
